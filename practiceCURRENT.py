@@ -249,6 +249,18 @@ import time
 
 # ------------------------------------------------------------------------------------------------
 
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome()
+driver.get("https://seleniumbase.io/demo_page")
+
+print(driver.find_element(By.CSS_SELECTOR,"input[id='radioButton1']").is_selected())
+print(driver.find_element(By.CSS_SELECTOR,"input[id='radioButton2']").is_selected())
+
+# is.displayed
+# is_enabled
 
 
 
